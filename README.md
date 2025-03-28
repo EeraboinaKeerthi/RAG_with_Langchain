@@ -23,3 +23,6 @@ CSV- CSVLoader: a dependency for loading csv files in LangChain, pdf- PyPdf: a d
 Documents are splitted in chunks that contain sufficient context useful to LLM's.If the chunks are huge, retrieval will be slow and LLM may struggle to extract the most relevant context from the chunk to respond to query. 
 
 chunk_size parameter is used to control this balance. Another parameter chunk_overlap is used to capture important information that may be lost around the boundaries between the chunk.
+
+1. Charactertextsplitter: This method was also unable to create chunks that were all below the chunk_size by splitting by-paragraph.
+2. Recursivecharactertextsplitter: We can improve with RecursiveCharacterTextSplitter.
