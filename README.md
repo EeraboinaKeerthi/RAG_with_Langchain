@@ -16,6 +16,4 @@ RAG Workflow:
 
 
 Load the documents using Langchain:
-CSV- CSVLoader
-pdf- PyPdf
-html- UnstructuredHTMLLoader
+CSV- CSVLoader, pdf- PyPdf, html- UnstructuredHTMLLoader
