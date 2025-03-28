@@ -14,3 +14,8 @@ RAG Workflow:
 
 4. Store: These embeddings or vectors are stored in a vector database for future retrieval.
 
+
+Load the documents using Langchain:
+CSV- CSVLoader
+pdf- PyPdf
+html- UnstructuredHTMLLoader
