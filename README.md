@@ -16,4 +16,4 @@ RAG Workflow:
 
 
 Load the documents using Langchain:
-CSV- CSVLoader, pdf- PyPdf, html- UnstructuredHTMLLoader
+CSV- CSVLoader: a dependency for loading csv files in LangChain, pdf- PyPdf: a dependency for loading PDF documents in LangChain, html- UnstructuredHTMLLoader: a dependency for loading html files in LangChain
