@@ -36,3 +36,12 @@ When documents are embedded and stored, similar documents are located closer tog
 **LCEL Retrieval Chain**
 Lang Chain Expression Language is a declarative syntax.
 It is particularly relevant to RAG systems because it creates modular, reusable pipelines that can combine retrieval and generation components together.
+
+**RAG Evaluation**
+We can evaluate the retrieval process to check if the retrieved documents are relevant to the query, 
+the generation process to see if the LLM hallucinated or misinterpreted the prompt, or 
+the final output to measure the performance of the whole system.
+
+Output accuracy: string evaluation
+We can use LLMs to measure the correctness of the final output by comparing it to a reference answer. We'll assign the query, model's answer, and reference answer to compare with the following variables.
+LangChainStringEvaluator from LangSmith, which is LangChain's platform for evaluating LLM applications. 
