@@ -45,3 +45,10 @@ the final output to measure the performance of the whole system.
 Output accuracy: string evaluation
 We can use LLMs to measure the correctness of the final output by comparing it to a reference answer. We'll assign the query, model's answer, and reference answer to compare with the following variables.
 LangChainStringEvaluator from LangSmith, which is LangChain's platform for evaluating LLM applications. 
+
+RAGAS Framework:
+RAGAS was designed to evaluate both the retrieval and generation components of a RAG application.
+
+Generation: Faithfulness, answer relevancy
+
+Retrieval: Context precision and context recall
