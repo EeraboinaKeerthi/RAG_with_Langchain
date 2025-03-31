@@ -31,3 +31,8 @@ chunk_size parameter is used to control this balance. Another parameter chunk_ov
 Embeddings are numerical representations of text.
 Embedding models aim to capture the "meaning" of the text, and these numbers map the text's position in a high-dimensional, or vector space.
 When documents are embedded and stored, similar documents are located closer together in the vector space. When the RAG application receives a user input, it will be embedded and used to query the database, returning the most similar documents.
+
+
+**LCEL Retrieval Chain**
+Lang Chain Expression Language is a declarative syntax.
+It is particularly relevant to RAG systems because it creates modular, reusable pipelines that can combine retrieval and generation components together.
