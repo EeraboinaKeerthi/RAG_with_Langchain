@@ -26,3 +26,8 @@ chunk_size parameter is used to control this balance. Another parameter chunk_ov
 
 1. Charactertextsplitter: This method was also unable to create chunks that were all below the chunk_size by splitting by-paragraph.
 2. Recursivecharactertextsplitter: We can improve with RecursiveCharacterTextSplitter.
+
+**Embeddings and Storage**
+Embeddings are numerical representations of text.
+Embedding models aim to capture the "meaning" of the text, and these numbers map the text's position in a high-dimensional, or vector space.
+When documents are embedded and stored, similar documents are located closer together in the vector space. When the RAG application receives a user input, it will be embedded and used to query the database, returning the most similar documents.
