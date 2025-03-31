@@ -64,3 +64,5 @@ Vector RAG Limitations:
 2.As the volume of the database grows, the retrieval process can become less efficient, as the computational load increases with the search space.
 3.Vector RAG systems don't easily accommodate structured or diverse data, which are harder to embed.
 All of these challenges can be addressed by RAG Graphs.
+
+
