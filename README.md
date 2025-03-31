@@ -55,4 +55,12 @@ Retrieval: Context precision and context recall metrics from RAGAS
 
 Faithfulness: Faithfulness assesses whether the generated output represents the retrieved documents well. It is calculated using LLMs to assess the ratio of faithful claims that can be derived from the context to the total number of claims. Because faithfulness is a proportion, it is normalized to between zero and one, where a higher score indicates greater faithfulness.
 
-Context Precision: Context precision measures how relevant the retrieved documents are to the query. A context precision score closer to one means the retrieved context is highly relevant. 
+Context Precision: Context precision measures how relevant the retrieved documents are to the query. A context precision score closer to one means the retrieved context is highly relevant.
+
+RAG Graph:
+
+Vector RAG Limitations:
+1.Document embedding captures semantic meaning but struggles to capture themes and relationships between entities in the document corpus.
+2.As the volume of the database grows, the retrieval process can become less efficient, as the computational load increases with the search space.
+3.Vector RAG systems don't easily accommodate structured or diverse data, which are harder to embed.
+All of these challenges can be addressed by RAG Graphs.
