@@ -49,6 +49,10 @@ LangChainStringEvaluator from LangSmith, which is LangChain's platform for evalu
 RAGAS Framework:
 RAGAS was designed to evaluate both the retrieval and generation components of a RAG application.
 
-Generation: Faithfulness, answer relevancy
+Generation: Faithfulness, answer relevancy metrics from RAGAS
 
-Retrieval: Context precision and context recall
+Retrieval: Context precision and context recall metrics from RAGAS
+
+Faithfulness: Faithfulness assesses whether the generated output represents the retrieved documents well. It is calculated using LLMs to assess the ratio of faithful claims that can be derived from the context to the total number of claims. Because faithfulness is a proportion, it is normalized to between zero and one, where a higher score indicates greater faithfulness.
+
+Context Precision: Context precision measures how relevant the retrieved documents are to the query. A context precision score closer to one means the retrieved context is highly relevant. 
