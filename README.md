@@ -65,4 +65,9 @@ Vector RAG Limitations:
 3.Vector RAG systems don't easily accommodate structured or diverse data, which are harder to embed.
 All of these challenges can be addressed by RAG Graphs.
 
+Neo4j graph databases:
+Neo4j is a powerful graph database option designed to store and efficiently query complex relationships.
+
+
+
 
