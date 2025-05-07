@@ -4,7 +4,16 @@ LLM Limitations: Knowledge is constrained to what is included in training data.
 
 RAG allows us to overcome this by integrating external data sources into LLM Applications.
 
-RAG Workflow:
+RAG is a technique that enhances a model generation's by retrieving the relevant information from external sources. An external memory source can be an internal database, or the internet.
+With RAG, only the information most relevant to the query is retrieved and input into the model.
+Having access to relevant information can help the model generate more detailed responses while redcusing halucinations.
+
+RAG Workflow/Architecture:
+A RAG system has two components:
+Retriever: retrieves information from extrenal memory sources
+Generator: genrates response based on the retrieved information.
+
+Preparing data for retrieval:
 
  1.Load : Load the documents to build the knowledge base
 
@@ -13,6 +22,22 @@ RAG Workflow:
 3. Embedding: Create numerical representations from text called embeddings
 
 4. Store: These embeddings or vectors are stored in a vector database for future retrieval.
+
+**Retrieval Algorithms:**
+
+Retrieval works by ranking chunks based on their relevance to a given query.Retrieval algorithms differs based on how relevance scores are computed.
+
+**Term-based retrieval: Uses TF-IDF algorithm**
+
+When a user enters a query, the system searches for documents that share terms with the query.
+Retrieved documents are ranked based on term frequency, document frequency, or more sophisticated measures like TF-IDF, BM25, or vector space models.
+
+Example:
+If a query is "machine learning":
+The system finds all documents that contain the terms “machine” and “learning”.It ranks them based on how often those terms appear and how rare or significant they are.
+
+**Embedding based retrieval:**
+
 
 
 **Load the documents using Langchain:**
