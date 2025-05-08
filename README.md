@@ -27,7 +27,7 @@ Preparing data for retrieval:
 
 Retrieval works by ranking chunks based on their relevance to a given query.Retrieval algorithms differs based on how relevance scores are computed.
 
-**Term-based retrieval: Uses TF-IDF algorithm**
+**Term-based retrieval: Uses TF-IDF algorithm** (Lexical leval)
 
 When a user enters a query, the system searches for documents that share terms with the query.
 Retrieved documents are ranked based on term frequency, document frequency, or more sophisticated measures like TF-IDF, BM25, or vector space models.
@@ -36,13 +36,11 @@ Example:
 If a query is "machine learning":
 The system finds all documents that contain the terms “machine” and “learning”.It ranks them based on how often those terms appear and how rare or significant they are.
 
-**Embedding based retrieval:**
+**Embedding based retrieval:** (Semantic level)
 
-
-
-
-
-
+Embedding based retrievers aim to rank documents/chunks based on how closely their meaning align with the query. This approach is also known as semantic retrieval.
+1. converts the original data chunks into embeddings.
+2. Stores the embeddings in a database called vector database.
 
 
 # RAG_with_Langchain
@@ -99,6 +97,25 @@ All of these challenges can be addressed by RAG Graphs.
 Neo4j graph databases:
 Neo4j is a powerful graph database option designed to store and efficiently query complex relationships.
 
+
+
+
+**PineCone Database**
+
+Pinecone is a vector database solution for building and scaling generative AI applications. 
+It uses embeddings to store and retrieve data based on their semantic similarity, which is often integrated into chatbots, search engines, recommendation engines, or other AI systems. 
+
+Indexes:
+Indexes are one of the core components of the Pinecone infrastructure. 
+They are used to store vectors and serve queries and other manipulations over the vectors it contains. 
+Indexes contain records. Each vector is contained in a record, and the record also stores additional metadata that can be used in querying. 
+It's also possible to create multiple indexes to house different datasets.
+
+There are two types of indexes in Pinecone: 
+Serverless and Pod-based indexes 
+In pod-based indexes, we choose one or more pre-configured units of hardware, called pods, in which to create the index. Depending on the pod type chosen, we get different amounts of storage, query latency, and query throughput. 
+Serverless indexes don't require managing resources; instead, they scale automatically depending on usage. 
+Serverless indexes run as a managed service on a cloud platform, like AWS, and the vectors are stored in blob storage on that platform. In many cases, serverless indexes result in lower costs than pod-based indexes, which is leading many organizations to switch to serverless.
 
 
 
