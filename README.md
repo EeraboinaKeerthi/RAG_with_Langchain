@@ -1,4 +1,4 @@
-# RAG_with_Langchain
+# RAG Architecture 
 
 LLM Limitations: Knowledge is constrained to what is included in training data.
 
@@ -40,6 +40,12 @@ The system finds all documents that contain the terms “machine” and “learn
 
 
 
+
+
+
+
+
+# RAG_with_Langchain
 **Load the documents using Langchain:**
 CSV- CSVLoader: a dependency for loading csv files in LangChain, pdf- PyPdf: a dependency for loading PDF documents in LangChain, html- UnstructuredHTMLLoader: a dependency for loading html files in LangChain
 
@@ -82,7 +88,7 @@ Faithfulness: Faithfulness assesses whether the generated output represents the 
 
 Context Precision: Context precision measures how relevant the retrieved documents are to the query. A context precision score closer to one means the retrieved context is highly relevant.
 
-RAG Graph:
+**RAG Graph:**
 
 Vector RAG Limitations:
 1.Document embedding captures semantic meaning but struggles to capture themes and relationships between entities in the document corpus.
